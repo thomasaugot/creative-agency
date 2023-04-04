@@ -2,3 +2,32 @@
   width: 100%;
   height: auto;
 }
+
+.content {
+  margin: 0 22px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.button {
+  background-color: #f94f4f;
+  display: block;
+  margin: 40px 0;
+  padding: 16.5px 0;
+  width: 40vw;
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+}
+
+.second-section {
+  margin-top: 80px;
+}
