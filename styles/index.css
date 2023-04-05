@@ -130,10 +130,18 @@ p {
 
 .slider-content__h2 {
   position: absolute;
-  top: 360px;
+  top: 380px;
   background-color: #191921;
   padding: 70px 25px 0 25px;
   height: 280px;
+}
+
+.fifth-section {
+  height: fit-content;
+  background-color: white;
+  position: relative;
+  top: 700px;
+  padding: 20px 0 50px 0;
 }
 
 /* For tablets */
