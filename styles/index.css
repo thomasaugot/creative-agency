@@ -5,6 +5,7 @@
 
 .content {
   margin: 0 22px;
+  position: relative;
 }
 
 h1 {
@@ -13,7 +14,6 @@ h1 {
 
 h2 {
   font-size: 32px;
-  margin-top: 40px;
 }
 
 h3 {
@@ -41,6 +41,8 @@ p {
   padding-bottom: 80px;
   background-color: #191921;
   color: white;
+  height: fit-content;
+  position: relative;
 }
 
 .svg_element {
@@ -64,9 +66,10 @@ p {
 .third-section {
   background-color: #f94f4f;
   height: fit-content;
-  position: absolute;
   color: white;
   padding-bottom: 80px;
+  padding-top: 80px;
+  margin-bottom: 0px;
 }
 
 .numbers {
@@ -76,4 +79,79 @@ p {
   position: relative;
   top: 8px;
   margin: 60px 0 50px 0;
+}
+
+.fourth-section {
+  background-color: #191921;
+  color: white;
+  height: fit-content;
+  margin: 0;
+}
+
+.slider-container {
+  position: absolute;
+}
+
+.slider-buttons {
+  position: relative;
+  top: 50%;
+  top: 600px;
+}
+
+#prev-button {
+  position: absolute;
+  left: 15px;
+  background-color: transparent;
+  border: none;
+}
+
+#next-button {
+  position: relative;
+  left: 65px;
+  background-color: transparent;
+  border: none;
+}
+
+.slider-container {
+  position: absolute;
+}
+
+.slider-image {
+  width: 100vw;
+  position: absolute;
+  margin: 0;
+}
+
+.slider-content {
+  position: relative;
+  width: 100vw;
+  height: 350px;
+}
+
+.slider-content__h2 {
+  position: absolute;
+  top: 360px;
+  background-color: #191921;
+  padding: 70px 25px 0 25px;
+  height: 280px;
+}
+
+/* For tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* CSS rules for tablets go here */
+}
+
+/* For laptops and desktops with small screens */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  /* CSS rules for laptops and desktops with small screens go here */
+}
+
+/* For laptops and desktops with medium screens */
+@media (min-width: 1280px) and (max-width: 1439px) {
+  /* CSS rules for laptops and desktops with medium screens go here */
+}
+
+/* For laptops and desktops with large screens */
+@media (min-width: 1440px) {
+  /* CSS rules for laptops and desktops with large screens go here */
 }
