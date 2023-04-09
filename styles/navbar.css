@@ -145,20 +145,52 @@ a {
 }
 
 @media (min-width: 768px) {
-  .header li {
-    float: left;
+  .header {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    left: 0;
   }
-  .header li a {
-    padding: 20px 30px;
+
+  .logo {
+    margin: 0 0 0 5vw;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
   }
   .header .menu {
     clear: none;
-    float: right;
     max-height: none;
-    width: auto;
     margin: 0;
+    height: 100%;
+    background-color: #f94f4f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    transform: translateX(0);
+    right: 0;
   }
+
   .header .menu-icon {
     display: none;
+  }
+
+  .button-menu {
+    background-color: #191921;
+  }
+
+  .navbar .menu {
+    float: right;
+    width: 60vw;
+  }
+
+  .header li:first-child {
+    margin: 0;
   }
 }

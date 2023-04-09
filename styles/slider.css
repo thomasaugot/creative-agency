@@ -1,0 +1,36 @@
+.slider-container {
+  position: absolute;
+}
+
+.slider-buttons {
+  position: relative;
+  top: 50%;
+  top: 600px;
+}
+
+#prev-button {
+  position: absolute;
+  left: 15px;
+  background-color: transparent;
+  border: none;
+}
+
+#next-button {
+  position: relative;
+  left: 65px;
+  background-color: transparent;
+  border: none;
+}
+
+.slider-container {
+  position: relative;
+}
+
+.slider-image {
+  width: 100vw;
+  position: relative;
+}
+
+.slider-content {
+  margin-top: 400px;
+}
