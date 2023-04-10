@@ -1,11 +1,16 @@
-.first-section img {
-  width: 100%;
-  height: auto;
-}
-
 .content {
   margin: 0 22px;
   position: relative;
+}
+
+.tablet-img,
+.desktop-img {
+  display: none;
+}
+
+.mobile-img {
+  width: 100%;
+  height: auto;
 }
 
 h1 {
@@ -145,22 +150,161 @@ p {
   padding: 20px 0 50px 0;
 }
 
+.white_svg {
+  display: none;
+}
+
 /* For tablets */
 @media (min-width: 768px) and (max-width: 1023px) {
-  /* CSS rules for tablets go here */
+  .mobile-img,
+  .desktop-img {
+    display: none;
+  }
+
+  .tablet-img {
+    display: block;
+    position: relative;
+    width: 60vw;
+    height: auto;
+  }
+
+  .first-section {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .content {
+    width: 40vw;
+    padding-left: 3vw;
+  }
+
+  .button {
+    width: 50%;
+  }
+
+  .second-section {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    background-color: white;
+  }
+  .second-section p {
+    width: 35vw;
+  }
+
+  .svg_element {
+    width: 10vw;
+    height: 3vh;
+    left: -35px;
+    top: -100px;
+    z-index: 1;
+  }
+
+  .content_tablet {
+    left: -100px;
+    top: -32px;
+    max-width: 60vw;
+    background-color: #191921;
+    padding: 86px;
+  }
+
+  .content_tablet h2 {
+    width: 30vw;
+    top: -20px;
+  }
+
+  .third-section {
+    background-color: white;
+  }
+
+  .content_third_section {
+    display: flex;
+    width: 90vw;
+    padding: 5vh 30vw 10vh 30vw;
+  }
+
+  .title {
+    color: #191921;
+    position: absolute;
+    padding: 50px;
+    z-index: 1;
+    width: 40vw;
+    left: 0;
+    top: -40px;
+  }
+
+  .listing {
+    height: fit-content;
+    background-color: #f94f4f;
+    position: relative;
+    top: -290px;
+    left: 0;
+    padding: 5vh 30vw 10vh 15vw;
+  }
+
+  .slider-content__h2 {
+    background-color: #191921;
+    max-width: 30vw;
+    display: inline-block;
+    padding: 10px 80px 80px 60px;
+    position: absolute;
+    top: -490px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  .slider-content {
+    background-color: white;
+    top: -10px;
+  }
+
+  .slider-image {
+    max-width: 60vw;
+    height: 500px;
+    position: absolute;
+    right: 0;
+    top: -490px;
+  }
+
+  .slider-container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .slider-buttons {
+    top: -260px;
+    z-index: 1;
+    left: 35px;
+  }
+
+  .white_svg {
+    display: block;
+    position: relative;
+    z-index: 1;
+    top: -400px;
+    left: 40vw;
+    width: 10vw;
+  }
+
+  .fourth-section {
+    height: fit-content;
+  }
+
+  .fifth-section {
+    top: -50px;
+  }
 }
 
 /* For laptops and desktops with small screens */
-@media (min-width: 1024px) and (max-width: 1279px) {
-  /* CSS rules for laptops and desktops with small screens go here */
-}
+@media (min-width: 1024px) {
+  .mobile-img,
+  .tablet-img {
+    display: none;
+  }
 
-/* For laptops and desktops with medium screens */
-@media (min-width: 1280px) and (max-width: 1439px) {
-  /* CSS rules for laptops and desktops with medium screens go here */
-}
-
-/* For laptops and desktops with large screens */
-@media (min-width: 1440px) {
-  /* CSS rules for laptops and desktops with large screens go here */
+  .desktop-img {
+    display: block;
+  }
 }
